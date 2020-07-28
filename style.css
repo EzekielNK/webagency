@@ -1,0 +1,2719 @@
+/* Polices */
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('fonts/roboto/roboto-regular.eot');
+    src: url('fonts/roboto/roboto-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-regular.woff') format('woff'),
+         url('fonts/roboto/roboto-regular.ttf') format('truetype'),
+         url('fonts/roboto/roboto-regular.svg#webfont') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('fonts/roboto/roboto-bold.eot');
+    src: url('fonts/roboto/roboto-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-bold.woff') format('woff'),
+         url('fonts/roboto/roboto-bold.ttf') format('truetype'),
+         url('fonts/roboto/roboto-bold.svg#webfont') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+/* Corps du site */
+body
+{
+    background-color: #FFFFFF;
+    font-family: 'roboto-regular', serif, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* class pour les couleurs */
+.backgroundb /* Bleu */
+{
+    background-color: #5cadd3;
+}
+/* L'en-tête du site */
+
+/* header */
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-fixe
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5.5vw;
+    background-color: #FFFFFF;
+    z-index: 3;
+}
+/* Logo WebAgency */
+.logo-wa
+{
+    position: absolute;
+    left: 10%;
+    top: 25px;
+}
+ .logo-wa img 
+ {
+    width: auto;
+ }
+/* Menu de navigation */
+.nav-menu
+{
+    position: absolute;
+    right: 10%;
+    top: 25px;
+}
+.nav-menu ul
+{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.250em;
+    padding-left: 0;
+}
+.nav-menu li
+{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav-menu a
+{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-menu li a:hover
+{
+    border-top: 4px solid #5cadd3;
+    padding-top: 42px;
+}
+/* Menu burger pour les petits écrans */
+#menuToggle
+{
+    display: none;
+}
+/*slider*/
+.slider
+{
+    position: relative;
+    width: 100%;
+    height: 39vw;
+    overflow: hidden;
+}
+.slides
+{
+    position: relative;
+    width: 200%;
+    top: 105px;
+    margin-left: 0;
+    animation: glisse 15s infinite;
+}
+.slide img
+{
+    width: 50%;
+    float: left;
+}
+/* Animation du slider */
+@keyframes glisse
+{
+    0%
+    {
+        left: 0%;
+    }
+    10%
+    {
+        left: 0%;
+    }
+    50%
+    {
+        left: -100%;
+    }
+    60%
+    {
+        left: -100%;
+    }   
+    90%
+    {
+        left: 0%;
+    }
+    100%
+    {
+        left: 0%;
+    }
+}
+/* Texte du slider */
+.text
+{
+    position: relative;
+    color: #fff;
+    font-size: 1.250em;
+    bottom: 330px;
+    left: 200px;
+    line-height: 1;
+    width: auto;
+    font-size: 1.25em;
+    font-family: 'roboto-bold', serif, sans-serif;
+}
+.text  p
+{
+    line-height: 0;
+    font-size: 1.25em;
+    font-family: 'roboto-bold', serif ,sans-serif;
+}
+.text h1
+{
+    font-family: 'roboto-bold', serif, sans-serif;
+}
+.Webagency
+{
+    color: #5cadd3;
+}
+/* bouton plus d'info */
+.button
+{
+    display: block;
+    border: 1px solid #5cadd3;
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2;
+    margin-top:2%;
+    box-shadow: 0 3px 0 #3491B2;
+    border-radius: 6px;
+    font-family: 'roboto-bold', serif, sans-serif;
+}
+/* Les chevrons gauche eet droite du slider */
+.angle-left, .angle-right
+{
+    position: absolute;
+    border-radius: 0 40px 40px 0;
+    background-color: rgba(70, 70, 70,0.6);
+    width: 35px;
+    height: 70px;
+    top: 53%;
+}
+.angle-right
+{
+    border-radius: 40px 0 0 40px;
+    right: 0;
+}
+.fa-chevron-right, .fa-chevron-left
+{
+    position: absolute;
+    top: 25px;
+    right: 6px;
+    font-size: 25px;
+    color: #fff;
+}
+.fa-chevron-left
+{
+    left: 6px;
+}
+/* Nos Services */
+.container-services
+{
+    display: flex;
+    flex-direction: column;
+}
+/* Section: Introduction */
+/* status bar du slider */
+#position 
+{
+    position: relative;
+    
+}
+.status-bar
+{
+    width: 8%;
+    height: 5px;
+    animation: status 15s infinite;
+    position: absolute;
+    bottom: 40px;
+}
+/* Animation de la status bar */
+@keyframes status 
+{
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: 0%;
+    }
+
+    50% {
+        left: 92%;
+    }
+
+    60% {
+        left: 92%;
+    }
+
+    90% {
+        left: 0%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+/* .Introduction et .projets sont utilisé pour les sections services et projets */
+.Introduction, .projets
+{
+    text-align: center;
+}
+.Introduction h2, .projets h2
+{
+    font-family: 'roboto-bold', serif, sans-serif;
+    font-size: 3em;
+    color: black;
+    
+}
+.Introduction p, .projets p
+{
+    line-height: 2;
+    font-size: 1em;
+    margin-top: 3vw;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* séparateur de contenu utilisé dans les sections services et projets */
+.circle
+{
+    position: relative;
+}
+/* trait gris */
+.border
+{
+    border: 1px solid #e2e3e3;
+    width: 140px;
+    left: 46vw;
+    position: absolute;
+    bottom: 0.7vw;
+}
+/* cercle bleu */
+.circle-b
+{
+    width: 0.9vw;
+    height: 0.9vw;
+    border-radius: 50%;
+    border: 5px solid white;
+    left: 49.1vw;
+    position: absolute;
+    bottom: 0;
+}
+/* Fin .border et .circle */
+/* Section: Services */
+.services
+{
+    display: flex;
+    flex-direction: row;
+}
+.list-services
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1em;
+    top: 140px;
+    margin-left: 28%
+}
+.list-services ul
+{
+    list-style-type: none;
+    height: 15%;
+}
+/* image pc */
+.pc
+{
+    margin: auto;
+}
+.pc img
+{
+    width: 120%;
+    margin-left: 60%;
+}
+/* cercle bleu */
+.circle-1
+{
+    position: relative;
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+    border: 3px solid white;
+    right: 2.3vw;
+    top: 2.5vw;
+}
+/* Font Awesome + cercle gris */
+.fa-chart-line, .fa-cubes, .fa-chart-pie
+{
+    position: relative;
+    color: #5cadd3;
+    right: 5.1vw;
+    font-size: 1.5vw;
+    top: 4.6vw;
+    border-radius: 50%;
+    padding: 2%;
+    border: 1px solid #e2e3e3;
+}
+
+/* Fin Font Awesome */
+/* texte info services */
+.ux-design h3, .ui-design h3, .seo h3
+{
+    line-height: 0;
+    font-family: 'roboto-bold', serif, sans-serif;
+}
+.ux-design p, .ui-design p, .seo p
+{
+    line-height: 2;
+    margin-bottom: 0;
+    padding-right: 26%;
+}
+/* Fin NOS SERVICES */
+
+/* NOS PROJETS */
+
+/* Container Projet */
+#container-projets
+{
+    background: rgb(245, 245, 245);
+}
+/* menu portfolio */
+#navbar
+{
+    position: relative;
+    top: 1vw;
+    margin-left: 38.5vw;
+}
+#navbar ul
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar li
+{
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    line-height: 1.9;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+#navbar a
+{
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: rgb(70, 70, 70);
+}
+/* couleur lien */
+.block1, #navbar a:hover
+{
+    background-color: #5cadd3;
+    box-shadow: 0 3px 0 #3491B2;
+    color: #fff;
+}
+#navbar .block1
+{
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+}
+#navbar .br
+{
+    border-radius: 4px 0 0 4px;
+}
+#navbar .br1
+{
+    border-radius: 0 4px 4px 0;
+}
+.block2
+{
+    border-radius: 0 4px 4px 0;
+}
+/* triangle bleu */
+.triangle1, #navbar li:hover .triangle
+{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 8px solid #3491B2;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 45px;
+}
+
+/* les images du portfolio */
+.portfolio
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+}
+/* overlay + images portfolio */
+.container-portfolio
+{
+    position: relative;
+    max-width: 19%;
+    margin-right: 0;
+}
+.image
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.container-portfolio:hover .overlay 
+{
+    height: 4.5vw;
+    overflow: visible;
+}
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(70, 70, 70, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    
+}
+/* font awesome + circle sur overlay */
+.fa-eye
+{
+    position: absolute;
+    left: 15.3vw;
+    top: -1.4vw;
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+/* texte sur overlay */
+.texte
+{
+    color:#fff;
+    font-size: 1.3em;
+    font-family: 'roboto-bold', serif, sans-serif;
+    position: absolute;
+    margin-top: 10px;
+    left: 20px;
+}
+.texte1
+{
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    left: 20px;
+    margin-top: 45px;
+
+}
+/* Fin nos projets */
+/* Formulaire de contatc */
+#container-contact
+{
+    background-color: #fff;
+}
+footer
+{
+    position: relative;
+    padding-top: 75px;
+}
+/* formulaire de contact */
+#contact
+{
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    left: 73vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 16.6%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#contact h3
+{
+    font-size: 1.5em;
+    line-height: 0;
+    margin-top: 35px;
+}
+#contact h4, .textc
+{
+    height: 0;
+    font-size: 0.9em;
+    color: #7c7c7c;
+}
+.pts 
+{
+    border-bottom: 1px dotted rgb(124, 124, 124);
+    width: 1.2vw;
+    top: 115px;
+    position: absolute;
+}
+.pf
+{
+    margin-top: 45px;
+}
+#contact input
+{
+    width: 15.85vw;
+    width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(124, 124, 124);
+    font-family: 'roboto-regular', serif, sans-serif;
+    font-size: 0.9em;
+    
+}
+#contact textarea
+{
+    margin-top: 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(124, 124, 124);
+    font-family: 'roboto-regular', serif, sans-serif;
+    font-size: 0.9em;
+    padding-left: 0.5vw;
+    padding-top: 5px;
+    width: 15.85vw;
+    width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    height: 135px;
+
+}
+/* Bouton envoyer */
+#contact .env
+{
+    
+    width: 7vw;
+    height: 30px;
+    color: #fff;
+    border: 1px solid #5cadd3;
+    box-shadow: 0 3px 0 #3491B2;
+    font-family: 'roboto-regular', serif, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding-right: 0;
+    -webkit-appearance: none; /* supprime l'apparence du bouton d'origine sur safari */
+}
+/* filtre bleu sur google map */
+.filtre1
+{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+/* google map */
+iframe
+{
+    width: 99.9%;
+    height: 650px;
+    opacity: 0.6;
+    border: 1px solid #fff;
+}
+/* Media queries */
+@media all and (max-width: 1836px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 6vw;
+    }
+    /* slider */
+    .slider
+    {
+        height: 39.7vw;
+    }
+    /* onglet slider */
+    .angle-left, .angle-right 
+    {
+        top: 54%;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 308px;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    /* trait gris */
+    .border
+    {
+        left: 45.8vw;
+    }
+    /* Portfolio */
+    /* menu portfolio */
+    #navbar
+    {
+        margin-left: 38vw;
+    }
+    /* formulaire de contact */
+    #contact
+    {
+        left: 72vw;
+        width: auto;
+    }
+
+}
+@media all and (max-width: 1716px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 6.1vw;
+    }
+    /* Slider */
+    .slider 
+    {
+        height: 40.1vw;
+    }
+    /* texte dans slider */
+    .text
+    {
+        bottom: 297px;
+        left: 175px;
+    }
+    /* Portfolio */
+    /* menu portfolio */
+    #navbar
+    {
+        margin-left: 37.5vw;
+    }
+    /* Font awesome portfolio +textes */
+    .fa-eye
+    {
+        padding: 13px;
+    }
+    .texte1
+    {
+        margin-top: 43px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 71vw;
+        top: 155px;
+        padding-left: 1.3vw;
+        padding-right: 1.3vw;
+    }
+}
+@media all and (max-width: 1628px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 6.5vw;
+    }
+    /* Slider + texte slider */
+    .slider
+    {
+        height: 40.5vw;
+    }
+    .text
+    {
+        bottom: 283px;
+        left: 164px;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 45.5vw;
+    }
+    /* Portfolio */
+    /* menu portfolio */
+    #navbar
+    {
+        margin-left: 37vw;
+    }
+    /* image portfolio */
+    /* texte dans overlay */
+    .texte1
+    {
+        margin-top: 40px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 70vw;
+        top: 160px;
+        padding-left: 1.4vw;
+        padding-right: 1.4vw;
+    }
+}
+@media all and (max-width: 1514px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 7vw;
+    }
+    /* slider */
+    .slider
+    {
+        height: 40.9vw;
+    }
+    /* texte du slider */
+    .text
+    {
+        bottom: 262px;
+        left: 150px;
+        font-size: 1.2em
+    }
+    /* Services */
+    /* introduction */
+    .Introduction p, .projets p
+    {
+        margin-top: 4vw;
+    }
+    /* séparateur de contenu */
+    .border 
+    {
+        left: 45.1vw;
+    }
+    .circle-b
+    {
+        width: 1vw;
+        height: 1vw;
+    }
+    /* image pc */
+    .pc img
+    {
+        width: auto;
+        margin-left: 30%;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 23%;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        padding: 3%;
+        font-size: 2vw;
+        right: 6vw;
+        top: 6vw;
+    }
+    /* cercle bleu */
+    .circle-1
+    {
+        width: 0.9vw;
+        height: 0.9vw;
+        right: 2.2vw;
+        top: 3.1vw;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 36vw;
+    }
+    /* images portfolio */
+    .portfolio
+    {
+        margin-right: 2%;
+    }
+    .container-portfolio
+    {
+        max-width: 20%;
+    }
+    .container-portfolio:hover .overlay
+    {
+        height: 4.7vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        left: 15.6vw;
+        padding: 12px;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 7px;
+    }
+    .texte1
+    {
+        margin-top: 37px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 68vw;
+        top: 160px;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 17.2vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+}
+@media all and (max-width : 1478px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 7.1vw;
+    }
+    /* slider */
+    .slider
+    {
+        height: 41vw;
+    }
+    /* Portfolio */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 35.5vw;
+    }
+    /* Formulaire de contact */
+    #contact input, #contact textarea
+    {
+        width: 17vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+}
+@media all and (max-width: 1449px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 7.3vw;
+    }
+    /* slider */
+    .slider
+    {
+        height: 41.2vw;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 247px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        line-height: 2.2;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 44.8vw;
+        bottom: 0.8vw
+    }
+    .circle-b
+    {
+        left: 49vw;
+    }
+    /* image pc */
+    .pc img
+    {
+        margin-left: 26%;
+    }
+    /* info service */
+    .list-services
+    {
+        margin-left: 20%;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 35vw;
+    }
+    /*Formulaire de contact */
+    #contact
+    {
+        left: 67vw;
+    }
+    /* google map */
+    iframe
+    {
+        width: 99.8%;
+    }
+}
+@media all and (max-width: 1408px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 7.5vw;
+    }
+    /* slider */
+    .slider
+    {
+        height: 41.4vw;
+    }
+    /* texte slider */
+    .text
+    {
+        font-size: 1.1em;
+        bottom: 232px;
+        left: 139px;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .circle-b
+    {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+    /* image pc */
+    .pc img
+    {
+        margin-left: 23%;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 18%;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 61vw;
+        top: 160px;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 19vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+}
+@media all and (max-width: 1313px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 8vw;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 42vw;
+    }
+    /* onglet slider */
+    .angle-left, .angle-right 
+    {
+        top: 52%;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 222px;
+        left: 130px;
+    }
+    /* services */
+    /*séparateur de contenu */
+    .border
+    {
+        left: 44.4vw;
+        bottom: 0.9vw;
+    }
+    /* image pc */
+    .pc img
+    {
+        margin-left: 13%;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 15%;
+        top: 160px;
+    }
+    /* projet */
+    /* menu protfolio */
+    #navbar 
+    {
+        margin-left: 34vw;
+    }
+    /* Portfolio */
+    .container-portfolio:hover .overlay
+    {
+        height: 4.6vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 9px;
+        top: -1.5vw;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 4px;
+        font-size: 1.1em;
+    }
+    .texte1
+    {
+        margin-top: 30px;
+        font-size: 1.1em;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 66vw;
+    }
+}
+@media all and (max-width: 1200px)
+{
+    /* L'en-tête du site */
+   .menu-fixe
+   {
+       height: 8.8vw;
+   }
+    /* Menu de navigation */
+    .nav-menu ul
+    {
+        font-size: 1.2em;
+    }
+    .nav-menu li a:hover
+    {
+        border-top: 3px solid #5cadd3;
+        padding-top: 41px;
+    }
+    /* Slider */
+    .slider 
+    {
+        height: 42.7vw;
+    }
+    /* texte dans slider */
+    .text 
+    {
+        bottom: 193px;
+        font-size: 1em;
+        left: 124px;
+    }
+    /* Bouton dans slider */
+    .button 
+    {
+        width: 115px;
+        height: 38px;
+        line-height: 2.5;
+        
+    }
+    /* FIN L'en-tête du site */
+
+    /* Nos Services */
+    /* barre bleu slider */
+    .status-bar
+    {
+        bottom: 34px;
+    }
+    /* texte de l'introduction */
+    .Introduction h2, .projets h2 
+    {
+        font-size: 2.5em;
+    }
+
+    .Introduction p, .projets p 
+    {
+        margin-top: 3.5%;
+    }
+    /* spérateur de contenu */
+    /* cercle bleu */
+    .circle-b 
+    {
+        width: 1.5vw;
+        height: 1.5vw;
+        left: 48vw;
+    }
+
+    /* Barre du cercle */
+    .border 
+    {
+        left: 43vw;
+        bottom: 1vw;
+    }
+    /* Listes services */
+    /* image pc */
+    .pc
+    {
+        margin: 0;
+    }
+    .pc img
+    {
+        width: auto;
+        margin-top: 11%;
+        margin-left: 6%;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 13%;
+        top: 45px;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        right: 7vw;
+        font-size: 2vw;
+        top: 7vw;
+        padding: 3.5%;
+    }
+    .circle-1
+    {
+        width: 0.9vw;
+        height: 0.9vw;
+        right: 2.8vw;
+        top: 4vw;
+    }
+    /* Nos Projets */
+    /* menu portfolio */
+    #navbar a
+    {
+        padding: 5px 15px;
+    }
+    .triangle1, #navbar li:hover .triangle
+    {
+        margin-left: 40px;
+    }
+    /* Images portfolio */
+    .portfolio
+    {
+        margin-left: 0;
+        margin-right: 3vw;
+    }
+    .container-portfolio
+    {
+        max-width: 26%;
+    }
+    /* Overlay */
+    .container-portfolio:hover .overlay
+    {
+        height: 6vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        left: 20.1vw;
+        top: -1.8vw;
+        font-size: 14px;
+        padding: 12px;
+    }
+    /* texte overlay */
+    .texte
+    {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    .texte1
+    {
+        font-size: 1.2em;
+        margin-top: 38px;
+    }
+    /* Fin du portfolio */
+
+    /* Formulaire de contact */
+    footer
+    {
+        top: 0;
+    }
+
+    .pts
+    {
+        width: 1.6vw;
+    }
+    #contact 
+    {
+        top: 130px;
+        left: 64vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 20.3vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    /* filtre bleu */
+    .filtre1
+    {
+        height: 600px;
+    }
+    /* google map */
+    iframe
+    {
+        height: 600px;
+        width: 99.8%;
+    }
+}
+@media all and (max-width: 1121px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 9.4vw;
+    }
+    /* logo + menu navigation */
+    .logo-wa, .nav-menu
+    {
+        top: 23px;
+    }
+    /* slider */
+    .slider
+    {
+        height: 43.3vw;
+    }
+    /* texte slider */
+    .text
+    {
+        left: 111px;
+        bottom: 180px;
+    }
+    /* Services */
+    /* image pc */
+    .pc
+    {
+        margin: auto;
+    }
+    /* info services */
+    .list-services
+    {
+        margin: auto;
+        margin-left: 8%;
+        top: 0;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        left: 14vw;
+        font-size: 2.5vw;
+        top: 2vw;
+        padding: 4%;
+    }
+    /* cercle bleu */
+    .circle-1
+    {
+        width: 1.1vw;
+        height: 1.1vw;
+    }
+    .ux-design p, .ui-design p, .seo p
+    {
+        line-height: 1.5;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 33vw;
+    }
+    /* Portfolio */
+    .container-portfolio:hover .overlay
+    {
+        height: 6.2vw;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 63vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 22.3vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+}
+@media all and (max-width: 1081px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 9.7vw;
+    }
+    /* menu navigation */
+    .nav-menu
+    {
+        top: 21px;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 43.6vw;
+    }
+    /* onglet slider */
+    .angle-left, .angle-right 
+    {
+        top: 55%;
+    }
+    .text
+    {
+        bottom: 165px;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 42.3vw;
+    }
+    /*Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 32.5vw;
+    }
+   /* Portfolio */
+   /* texte overlay */
+    .texte
+    {
+        margin-top: 7px;
+    }
+    .texte1
+    {
+        margin-top: 34px;
+    }
+}
+@media all and (max-width: 1024px)
+{
+    /* L'en-tête du site */
+    /* Menu de navigation */
+    .nav-menu li a:hover 
+    {
+        padding-top: 37px;
+    }
+    /* Slider */
+    .slider 
+    {
+        height: 44.2vw;
+    }
+    /* onglet slider */
+    .angle-left, .angle-right
+    {
+        display: none;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 145px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        margin-top: 3%;
+    }
+    /* Service */
+    /* barre bleu slider */
+    #position
+    {
+        display: none;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 31.8vw;
+    }
+    /* Portfolio */
+    .container-portfolio:hover .overlay
+    {
+        height: 6vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 9px;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 6px;
+    }
+    .texte1
+    {
+        margin-top: 30px;
+    }
+}
+@media all and (max-width: 992px)
+{
+    /* L'en-tête du site */
+    .menu-fixe 
+    {
+        height: 10.6vw;
+    }
+    /* logo agence */
+    .logo-wa
+    {
+        left: 36.5%;
+        top: 17px;
+        text-align: center;
+    }
+    .logo-wa img
+    {
+        max-width: 75%;
+    }
+    /* Menu de navigation */
+    .nav-menu
+    {
+        right: 27%;
+        top: 47px;
+    }
+    .nav-menu li a:hover
+    {
+        border-top: 0;
+        padding-top: 0;
+        color: #5cadd3;
+    }
+    /* Slider */
+    /* texte slider */
+    .text
+    {
+        font-size: 0.8em;
+        bottom: 130px;
+        left: 100px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        width: 103px;
+        height: 33px;
+        line-height: 2.8;
+    }
+    /* Introduction services */
+    .Introduction p, .projets p
+    {
+        line-height: 1.5;
+        margin-top: 5%;
+    }
+    /* séparateur de contenu */
+    .border
+    {
+        left: 42vw;
+        bottom: 1.1vw;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 7%;
+    }
+    /* image pc */
+    .pc
+    {
+        margin: auto;
+    }
+    .pc img
+    {
+        margin: auto;
+        
+    }
+    /* Font awesome + circle + point bleu */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        left: 14vw;
+        font-size: 3vw;
+        top: 2vw;
+        padding: 5%;
+    }
+    .circle-1
+    {
+        width: 1.1vw;
+        height: 1.1vw;
+    }
+    .ux-design p, .ui-design p, .seo p
+    {
+        line-height: 1.5;
+    }
+    /* Nos projets */
+    
+    /* Images portfolio */
+    .container-portfolio
+    {
+        max-width: 35%;
+    }
+    .container-portfolio:hover .overlay
+    {
+        height: 8.2vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        left: 27.1vw;
+        top: -2.5vw;
+        padding: 15px;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 12px;
+    }
+    .texte1
+    {
+        margin-top: 40px;
+    }
+    /* Formulaire de contact */
+    
+    #contact
+    {
+        top: 130px;
+        left: 58vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 24.5vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    #contact .env
+    {
+        width: 8vw;
+    }
+    /* google map */
+   
+    iframe
+    {
+        width: 99.8%;
+    }
+}
+@media all and (max-width: 896px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 11.7vw;
+    }
+    /* Logo WebAgency */
+    .logo-wa
+    {
+        left: 33%;
+    }
+    .nav-menu
+    {
+        right: 26%;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 45.4vw;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 110px;
+        left: 90px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        width: 100px;
+        height: 30px;
+        line-height: 2.5;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 41vw;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 0;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 28vw;
+    }
+    /* Portfolio */
+    .portfolio
+    {
+        margin-right: 4vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 12px;
+    }
+}
+@media all and (max-width:845px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 12.4vw;
+    }
+    /* menu navigation */
+    .nav-menu
+    {
+        right: 23.6%;
+    }
+    /* slider */
+    .slider 
+    {
+        height: 46vw;
+    }
+    /* texte slider */
+    .text 
+    {
+        bottom: 100px;
+    }
+    /* bouton plus d'info */
+    .button 
+    {
+        margin-top: 2.5%;
+    }
+    /*services */
+    /* séparateur de contenu */
+    .border 
+    {
+        left: 40.5vw;
+        bottom: 1.3vw;
+    }
+    .circle-b 
+    {
+        width: 1.8vw;
+        height: 1.8vw;
+    }
+    .services 
+    {
+        flex-direction: column;
+    }
+    /* info services */
+    .list-services 
+    {
+        margin-left: 17%;
+    }
+    .list-services ul 
+    {
+        height: 22%;
+    }
+    /* image pc */
+    .pc 
+    {
+        margin-top: 4%;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie 
+    {
+        font-size: 4vw;
+        left: 22.5vw;
+        top: 3vw;
+        padding: 3%;
+    }
+    /* cercle bleu */
+    .circle-1 
+    {
+        width: 1.3vw;
+        height: 1.3vw;
+    }
+    /* Projets */
+    /* mebu portfolio */
+    #navbar 
+    {
+        margin-left: 27vw;
+    }
+    /* Portfolio */
+    .container-portfolio:hover .overlay 
+    {
+        height: 7.9vw;
+    }
+    /* font awesome */
+    .fa-eye 
+    {
+        padding: 10px;
+        top: -2.3vw;
+    }
+    /* texte overlay */
+    .texte 
+    {
+        margin-top: 8px;
+    }
+    .texte1 
+    {
+        margin-top: 33px;
+    }
+    
+}
+@media all and (max-width: 820px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 12.8vw;
+    }
+    /* menu navigation */
+    .nav-menu
+    {
+        right: 22%;
+    }
+}
+@media all and (max-width: 768px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 13.7vw;
+    }
+    /* Logo WebAgency */
+    .logo-wa
+    {
+        left: 33.5%;
+        top: 30px;
+    }
+    /* Menu de navigation */
+    .nav-menu
+    {
+        display: none;
+    }
+    /* Menu burger petit écrans */
+    a 
+    {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+    a:hover 
+    {
+        color: #5cadd3;
+    }
+    #menuToggle 
+    {
+        display: block;
+        position: relative;
+        top: 42px;
+        left: 50px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle input 
+    {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* cache ça */
+        z-index: 2;
+        /* et placez-le sur le hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    /*
+ * Juste un hamburger rapide */
+    #menuToggle span 
+    {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #5cadd3;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+    #menuToggle span:first-child 
+    {
+        transform-origin: 0% 0%;
+    }
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    /* 
+ * Transformer toutes les tranches de hamburger
+ * dans une croix.
+ */
+    #menuToggle input:checked~span 
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    /*
+ * Mais cachons le milieu.
+ */
+    #menuToggle input:checked~span:nth-last-child(3) 
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Oh yeah et le dernier devrait aller dans l'autre sens
+ */
+    #menuToggle input:checked~span:nth-last-child(2) 
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Mettre en position absolute
+ * en haut à gauche de l'écran
+ */
+    #menu 
+    {
+        position: absolute;
+        width: auto;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* lisse les caractères au niveau du pixel (et non par sous-échantillonnage). Pour des textes clairs sur fonds sombres, 
+        cette méthode fait paraître le texte plus clair. safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li 
+    {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    /*
+ * Et glissons-le en partant de la gauche
+ */
+    #menuToggle input:checked~ul 
+    {
+        transform: none;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 47.2vw;
+    }
+    /* texte slider */
+    .text
+    {
+        font-size: 0.7em;
+        bottom: 85px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        width: 95px;
+        height: 30px;
+        line-height: 2.8;
+    }
+    /* Fin de l'en-tête du site */
+
+    /* Nos Services */
+    /* barre bleu du slider */
+    #position
+    {
+        display: none;
+    }
+    /* Introduction */
+    .Introduction p, .projets p
+    {
+        margin-top: 6vw;
+    }
+    /* séparateur de contenu */
+    .border
+    {
+        left: 40vw;
+        bottom: 1.4vw;
+    }
+    .circle-b
+    {
+        width: 2vw;
+        height: 2vw;
+        left: 47.5vw
+    }
+    /* Nos Projets */
+    
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 24vw;
+    }
+    /* Fin navbar portfolio */
+
+    /* Images portfolio */
+    .portfolio
+    {
+        margin-right: 5vw;
+    }
+    .container-portfolio
+    {
+        max-width: 40%;
+    }
+    .container-portfolio:hover .overlay
+    {
+        height: 9vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        left: 30.5vw;
+        top: -2.8vw;
+    }
+    /* texte overlay */
+    .texte1
+    {
+        margin-top: 38px;
+    }
+    /* Fin images portfolio */
+
+    /* Formulaire de contatc */
+    #contact
+    {
+        
+        top: 72px;
+        left: 30vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        margin: 0 auto;
+        background-color: #9fc9df;
+    }
+    .pts
+    {
+        width: 2.4vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 36.7vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    #contact .env
+    {
+        width: 10vw;
+        margin-top: 10px;
+    }
+    /* filtre bleu */
+    .filtre1
+    {
+        top: 575px;
+        height: 601px;
+        position: relative;
+    }
+    /* google map */
+    iframe
+    {
+        width: 99.8%;
+        top: 96%;
+        position: absolute;
+    }
+}
+@media all and (max-width: 749px)
+{
+    /* L'en-tête */
+    .menu-fixe
+    {
+        height: 13.9vw;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 47.8vw;
+    }
+    
+    /* Portfolio */
+    /* font awesome */
+    .fa-eye
+    {
+        top: -2.7vw;
+    }
+    /* texte overlay */
+    .texte1
+    {
+        margin-top: 35px;
+    }
+}
+@media all and (max-width: 693px)
+{
+    /* L'en-tête su site */
+    /* logo agence */
+    .logo-wa
+    {
+        top: 25px;
+    }
+    /* menu petit écran */
+    #menuToggle
+    {
+        top: 37px;
+    }
+    /* slider */
+    .slider
+    {
+        height: 48.8vw;
+    }
+    /* texte slider */
+    .text
+    {
+        bottom: 75px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        margin-top: 3%;
+        height: 30px;
+        width: 90px;
+        line-height: 2.9;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 39vw;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 22vw;
+    }
+    /* Portfolio */
+    .container-portfolio:hover .overlay
+    {
+        height: 9.1vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 8px;
+        top: -2.6vw;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 6px;
+    }
+    .texte1
+    {
+        margin-top: 30px;
+    }
+    /* Formulaire de contact */
+    /* google map */
+    iframe
+    {
+        width: 99.7%;
+    }
+}
+@media all and (max-width: 667px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 13.3vw;
+    }
+    /* logo agence */
+    .logo-wa
+    {
+        top: 25px;
+    }
+    /* slider */
+    .slider
+    {
+        height: 49.3vw;
+    }
+    /* menu petit écran */
+    #menuToggle
+    {
+        top: 37px;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 21vw;
+    }
+    /*Formulaire de contact */
+    #contact
+    {
+        left: 28vw;
+    }
+}
+@media all and (max-width: 640px)
+{
+    /* l' en-tête du site */
+    /* logo agence */
+    .logo-wa
+    {
+        top: 20px;
+    }
+    /* menu petit écran */
+    #menuToggle
+    {
+        top: 32px;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 70vw;
+        background-color: #9fc9df;
+    }
+    .slides 
+    {
+        display: none;
+    }
+    /* text slider */
+    .text 
+    {
+        font-size: 0.9em;
+        left: 60px;
+        top: 160px;
+        bottom: 0;
+    }
+    /* bouton plus d'info */
+    .button 
+    {
+        margin-top: 6%;
+        line-height: 2.4;
+    }
+    /* Nos services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 38vw;
+        bottom: 1.6vw;
+    }
+    .circle-b
+    {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    /* Porjets */
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 6px;
+    }
+    /* texte overlay */
+    .texte, .texte1
+    {
+        font-size: 1.1em;
+    }
+}
+@media all and (max-width: 600px)
+{
+    /* L'en-tête du site */
+    /* texte slider */
+    .text
+    {
+        top: 155px;
+        font-size: 0.8em
+    }
+    /* Projet */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 18vw;
+    }
+}
+@media all and (max-width: 550px)
+{
+    /* l'en-tête du site */
+    .menu-fixe
+    {
+        height: 14vw;
+    }
+    /* menu petit écran */
+    #menuToggle
+    {
+        top: 30px;
+    }
+    /* logo agence */
+    .logo-wa 
+    {
+        left: 27.5%;
+        top: 18px;
+    }
+    /* texte slider */
+    .text 
+    {
+        top: 140px;
+        left: 55px;
+        font-size: 0.75em
+    }
+    /* services */
+    /* séparateur de contenu */
+    .circle-b 
+    {
+        width: 2.6vw;
+        height: 2.6vw;
+    }
+    .border 
+    {
+        left: 36vw;
+        bottom: 1.9vw;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        padding: 4%;
+        font-size: 5vw;
+        left: 19.5vw;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+
+        margin-left: 15vw;
+    }
+    /* Portfolio */
+    .portfolio 
+    {
+        margin-right: 5vw;
+    }
+    .container-portfolio 
+    {
+        max-width: 65%;
+    }
+    /* Overlay */
+    .container-portfolio:hover .overlay {
+        height: 14.3vw;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 12px;
+    }
+    .texte1
+    {
+        margin-top: 40px;
+    }
+    /* font awesome */
+    .fa-eye 
+    {
+        left: 49vw;
+        top: -4.4vw;
+        padding: 12px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 26vw;
+    }
+    #contact input, #contact textarea 
+    {
+        width: 41.7vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    /* bouton envoyer */
+    #contact .env 
+    {
+        width: 12vw;
+    }
+}
+@media all and (max-width: 480px)
+{
+    /* L'en-tête du site */
+    .menu-fixe 
+    {
+        height: 17vw;
+    }
+    /* logo agence */
+    .logo-wa
+    {
+        left: 25%;
+    }    
+    /* Slider */
+    .slider
+    {
+        height: 75vw;
+    }
+    /* texte slider */
+    .text
+    {
+        font-size: 0.65em;
+        top: 145px;
+        left: 50px;
+    }
+    .button
+    {
+        height: 25px;
+        width: 80px;
+    }
+    /* Nos services */
+    /* Texte introduction + projets */
+    .Introduction h2, .projets h2
+    {
+        font-size: 2.4em;
+    }
+    .Introduction p, .projets p
+    {
+        margin-top: 10%;
+    }
+    /* séparateur de contenu */
+    .border
+    {
+        left: 33vw;
+        bottom: 2vw;
+    }
+    .circle-b
+    {
+        width: 3vw;
+        height: 3vw;
+        left: 46vw;
+    }
+    /* servies */
+    .list-services ul
+    {
+        height: 25%;
+    }
+    /* Listes services */
+    /* image pc */
+    .pc
+    {
+        display: none;
+    }
+    /* font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        font-size: 6vw;
+        left: 17.5vw;
+        top: 3vw;
+        padding: 5%;
+    }
+    .circle-1
+    {
+        width: 2.2vw;
+        height: 2.2vw;
+        right: 4.9vw;
+        top: 8vw;
+    }
+    .ux-design p, .ui-design p, .seo p
+    {
+        line-height: 1.5;
+    }
+    /* Nos projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 9vw;
+    }
+    /* images portfolio */
+    .portfolio
+    {
+        margin-right: 7vw;
+    }
+    .container-portfolio
+    {
+        max-width: 65%;
+    }
+    /* Overlay */
+    .container-portfolio:hover .overlay
+    {
+        height: 13.6vw;
+    }
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 8px;
+    }
+    .texte1
+    {
+        margin-top: 35px;
+    }
+    /* fpnt awesome */
+    .fa-eye
+    {
+        left: 47vw;
+        top: -4.6vw;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 20vw;
+        
+    }
+    .pts
+    {
+        width: 4vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 52.8vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    #contact .env
+    {
+        width: 14vw;
+    }
+    /* Google map */
+    iframe
+    {
+        width: 99.5%;
+    }
+}
+@media all and (max-width: 425px)
+{
+    /* L'en-tête du site */
+    .menu-fixe 
+    {
+        height: 18vw;
+    }
+    /* texte slider */
+    .text 
+    {
+        font-size: 0.6em;
+        top: 130px;
+        left: 25px;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        bottom: 2.4vw;
+    }
+    .circle-b 
+    {
+        width: 3.4vw;
+        height: 3.4vw;
+    }
+    /* projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 4vw;
+    }
+    /* Portfolio */
+    /* texte overlay */
+    .texte
+    {
+        margin-top: 6px;
+    }
+    .texte1
+    {
+        margin-top: 30px;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 9px;
+    }
+    /* Formaulaire de contact */
+    #contact .env 
+    {
+        width: 15vw;
+    }
+}
+@media all and (max-width: 412px)
+{
+    /* projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 2vw;
+    }
+}
+@media all and (max-width: 375px)
+{
+    /* L'en-tête du site */
+    .menu-fixe
+    {
+        height: 23vw;
+    }
+    /* logo WebAgency */
+    .logo-wa
+    {
+        top: 21px;
+        left: 20%;
+    }
+    /* Menu de navigation petits écrans */
+    #menuToggle
+    {
+        top: 33px;
+        left: 35px;
+    }
+    /* Slider */
+    .slider
+    {
+        height: 90vw;
+    }
+    /* texte slider */
+    .text
+    {
+        top: 150px;
+        left: 10px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        line-height: 2.8;
+    }
+    /* Service */
+    /* séparateur de contenu */
+    .border
+    {
+        width: 120px;
+        bottom: 2.6vw;
+        left: 33vw;
+    }
+    .circle-b
+    {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .Introduction p, .projets p
+    {
+        margin-top: 12%;
+    }
+    /* Font awesome */
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        left: 14vw;
+        top: 2vw;
+        font-size: 6.5vw;
+        padding: 6%;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar 
+    {
+        margin-left: 7vw;
+    }
+    #navbar a 
+    {
+        padding: 5px 8px;
+    }
+    /* triangle */
+    .triangle, .triangle1
+    {
+        display: none;
+    }
+    /* Portfolio */
+    .portfolio
+    {
+        margin-right: 10vw;
+    }
+    /* font awesome */
+    .fa-eye
+    {
+        padding: 8px;
+        font-size: 10px;
+        left: 45vw;
+        top: -4.1vw;
+    }
+    /* texte overlay */
+    .texte
+    {
+        font-size: 1em;
+        margin-top: 5px;
+        left: 15px;
+    }
+    .texte1
+    {
+        font-size: 1em;
+        margin-top: 27px;
+        left: 15px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 14vw;
+    }
+    #contact input, #contact textarea
+    {
+        width: 61.4vw;
+        width: -webkit-fill-available; /* corrige le problème de largeur sur safari */
+    }
+    #contact .env
+    {
+        width: 20vw;
+    }
+}
+@media all and (max-width: 320px)
+{
+    /* L'en-tête du site */
+    /* logo agence */
+    .logo-wa
+    {
+        top: 16px;
+    }
+    /*Menu petits écrans */
+    #menuToggle
+    {
+        top: 27px;
+    }
+    /* Slider */
+    /* texte slider */
+    .text
+    {
+        font-size: 0.5em;
+        top: 123px;
+    }
+    /* bouton plus d'info */
+    .button
+    {
+        font-size: 1.5em;
+        line-height: 2.2;
+    }
+    /* Services */
+    /* séparateur de contenu */
+    .border
+    {
+        left: 31vw;
+    }
+    /* info services */
+    .list-services
+    {
+        margin-left: 14%;
+    }
+    /* Projets */
+    /* menu portfolio */
+    #navbar
+    {
+        margin-left: 3.5vw;
+    }
+    #navbar a
+    {
+        padding: 5px 5px;
+    }
+    /* Portfolio */
+    /* texte overlay */
+    .texte1
+    {
+        margin-top: 22px;
+    }
+    /* Formulaire de contact */
+    #contact
+    {
+        left: 12vw;
+        top: 80px;
+        width: 70%
+    }
+}
